@@ -31,6 +31,8 @@
           }
         </style>
       {% endif %}
+      <script src="{{ url_for('dashboard:static', path='/htmx.bundle.js') }}"></script>
+      <script src="{{ url_for('dashboard:static', path='/hyperscript.bundle.js') }}"></script>
       {% block javascripts_modules %}{% endblock %}
     {% endblock %}
   </head>
